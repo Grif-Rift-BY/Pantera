@@ -1,0 +1,698 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}  
+
+/*
+.##.....##.########....###....########..########.########.
+.##.....##.##.........##.##...##.....##.##.......##.....##
+.##.....##.##........##...##..##.....##.##.......##.....##
+.#########.######...##.....##.##.....##.######...########.
+.##.....##.##.......#########.##.....##.##.......##...##..
+.##.....##.##.......##.....##.##.....##.##.......##....##.
+.##.....##.########.##.....##.########..########.##.....##
+*/
+
+body{
+  background-color: black;
+  font-family: "Quicksand_Medium";
+}
+
+.header-background_transparent {
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 500;
+}
+
+.header-background_colored {
+  height: 150px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  z-index: 500;
+}
+
+.header-logo_position {
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  z-index: 600;
+  top: 0;
+  left: calc(50% - 110px);
+}
+
+.pantera-logo_image {
+  height: 80px;
+  width: 220px;
+  background-image: url(../img/pantera-logo.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.pantera-logo_image:hover  {
+  transform: scale(1.1);
+  transition: .2s ease-in;
+  background-image: url(../img/pantera-logo-colored.png);
+}
+
+.navbar_position {
+  position: fixed;
+  z-index: 700;
+  top: 80px;
+  left: 0;
+}
+
+.main-invisible-block_position{
+  height: 150px;
+  width: 100%;
+  display: none;
+}
+
+.invisible-block_position {
+  height: 150px;
+  width: 100%;
+}
+
+.navbar__border_colored{
+  height: 1px;
+  width: 100%;
+  position: fixed;
+  top: 150px ;
+  border-top: 1px solid dimgray;
+  z-index: 800;
+}
+
+/*
+.................##....##....###....##.....##.########.....###....########.
+.................###...##...##.##...##.....##.##.....##...##.##...##.....##
+.................####..##..##...##..##.....##.##.....##..##...##..##.....##
+.................##.##.##.##.....##.##.....##.########..##.....##.########.
+.................##..####.#########..##...##..##.....##.#########.##...##..
+.................##...###.##.....##...##.##...##.....##.##.....##.##....##.
+.#######.#######.##....##.##.....##....###....########..##.....##.##.....##
+*/
+
+#navbarSupportedContent .dropdown-menu {
+  border: 0px;
+  border-radius: 0px;
+}
+
+#bootstrap-override .navbar-toggler {
+  color: #6f6f6f;
+  border: 0px solid #6f6f6f;
+  border-radius: 3px;
+}
+
+#bootstrap-override .navbar-toggler-icon {
+  background-image: url(../img/hamburger.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#bootstrap-override .navbar-toggler-icon:hover {
+  background-image: url(../img/hamburger2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: .2s ease-in;
+}
+
+#bootstrap-override .navbar {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0) 100%);
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+#bootstrap-override .dropdown-menu_background {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 0.0) 100%);
+  border-top: 1px solid dimgray;
+  border-bottom: 1px solid dimgray;
+  z-index: 1002;
+}
+
+#bootstrap-override .dropdown-item_colored {
+  font-family: "Quicksand_Medium";
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#bootstrap-override .dropdown-item_colored:hover {
+  color: red;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1), 2px 2px 15px rgba(255, 255, 255, 1), -2px -2px 15px rgba(255, 255, 255, 1),  -2px 2px 15px rgba(255, 255, 255, 1), 2px -2px 15px rgba(255, 255, 255, 1);
+  transition: .2s ease-in;
+}
+
+#bootstrap-override .navbar:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+  z-index: 1002;
+}
+
+/* #bootstrap-override .disco-navbar:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+}
+
+#bootstrap-override .tour-navbar:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%);
+}  */
+
+#bootstrap-override a.nav-link_colored {
+  font-family: "Capture_Smallz";
+  font-size: 16px;
+  padding: 6px;
+  letter-spacing: 1px;
+  color: white;
+} 
+
+#bootstrap-override a.nav-link_colored:hover {
+  color: rgb(255, 0, 0);
+  transition: .2s ease-in;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1), 2px 2px 15px rgba(255, 255, 255, 1), -2px -2px 15px rgba(255, 255, 255, 1),  -2px 2px 15px rgba(255, 255, 255, 1), 2px -2px 15px rgba(255, 255, 255, 1);
+}
+
+
+/*
+.##.....##....###....####.##....##
+.###...###...##.##....##..###...##
+.####.####..##...##...##..####..##
+.##.###.##.##.....##..##..##.##.##
+.##.....##.#########..##..##..####
+.##.....##.##.....##..##..##...###
+.##.....##.##.....##.####.##....##
+*/
+
+/*
+.####.##....##.########..########.##.....##.....##.....##.########.##.....##.##......
+..##..###...##.##.....##.##........##...##......##.....##....##....###...###.##......
+..##..####..##.##.....##.##.........##.##.......##.....##....##....####.####.##......
+..##..##.##.##.##.....##.######......###........#########....##....##.###.##.##......
+..##..##..####.##.....##.##.........##.##.......##.....##....##....##.....##.##......
+..##..##...###.##.....##.##........##...##..###.##.....##....##....##.....##.##......
+.####.##....##.########..########.##.....##.###.##.....##....##....##.....##.########
+*/
+.carousel {
+  height: 55.1vw;
+  width: 100%;
+}
+
+.carousel-inner img {
+  height: 55.1vw;
+  margin: 0 auto;
+}
+
+.carousel-indicators li {
+  border-color: #000;
+}
+
+span.carousel-control-next-icon {
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+span.carousel-control-prev-icon {
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+#bootstrap-override .carousel__central-link_styled {
+  position: relative;
+  top: calc((27vw + .5vw + 12px) * (-1));
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-family: "Capture_Smallz";
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#bootstrap-override .carousel__central-link_styled:hover {
+  background-color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: rgb(255, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .9);
+  text-decoration: none;
+}
+
+/*
+.##.......####.##....##.##....##..........######..########..######..########.####..#######..##....##
+.##........##..###...##.##...##..........##....##.##.......##....##....##.....##..##.....##.###...##
+.##........##..####..##.##..##...........##.......##.......##..........##.....##..##.....##.####..##
+.##........##..##.##.##.#####....#######..######..######...##..........##.....##..##.....##.##.##.##
+.##........##..##..####.##..##.................##.##.......##..........##.....##..##.....##.##..####
+.##........##..##...###.##...##..........##....##.##.......##....##....##.....##..##.....##.##...###
+.########.####.##....##.##....##..........######..########..######.....##....####..#######..##....##
+*/
+
+/*
+.####.##....##.########..########.##.....##.....##.....##.########.##.....##.##......
+..##..###...##.##.....##.##........##...##......##.....##....##....###...###.##......
+..##..####..##.##.....##.##.........##.##.......##.....##....##....####.####.##......
+..##..##.##.##.##.....##.######......###........#########....##....##.###.##.##......
+..##..##..####.##.....##.##.........##.##.......##.....##....##....##.....##.##......
+..##..##...###.##.....##.##........##...##..###.##.....##....##....##.....##.##......
+.####.##....##.########..########.##.....##.###.##.....##....##....##.....##.########
+*/
+
+.link-section__item {
+  height: 15vw;
+  overflow: hidden;
+}
+
+.link-section__music {
+  background: url(../img/music-background.jpg) center center;
+  background-size: 100% 100%;
+  text-decoration: none;
+}
+
+.link-section__music:hover {
+  background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url(../img/music-background.jpg) center center;
+  transition: background-size .3s ease-in-out;
+  background-size: 120% 120% ;
+}
+
+.link-section__videos {
+  background: url(../img/videos-background.jpg) center center;
+  background-size: 100% 100%;
+  text-decoration: none;
+}
+
+.link-section__videos:hover {
+  background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url(../img/videos-background.jpg) center center;
+  transition: background-size .3s ease-in-out;
+  background-size: 120% 120% ;
+}
+
+.link-section__store {
+  background: url(../img/newmerch-background.jpg) center center;
+  background-size: 100% 100%;
+  text-decoration: none;
+}
+
+.link-section__store:hover {
+  background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url(../img/newmerch-background.jpg) center center;
+  transition: background-size .3s ease-in-out;
+  background-size: 120% 120% ;
+}
+
+#bootstrap-override .link-section__central-link_styled {
+  position: relative;
+  top: 6vw;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-family: "Capture_Smallz";
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#bootstrap-override .link-section__central-link_styled:hover {
+  background-color: rgb(255, 255, 255, .8);
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: rgb(255, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .9);
+}
+
+/*
+.########..####..######...######...#######......##.....##.########.##.....##.##......
+.##.....##..##..##....##.##....##.##.....##.....##.....##....##....###...###.##......
+.##.....##..##..##.......##.......##.....##.....##.....##....##....####.####.##......
+.##.....##..##...######..##.......##.....##.....#########....##....##.###.##.##......
+.##.....##..##........##.##.......##.....##.....##.....##....##....##.....##.##......
+.##.....##..##..##....##.##....##.##.....##.###.##.....##....##....##.....##.##......
+.########..####..######...######...#######..###.##.....##....##....##.....##.########
+*/
+
+/* #bootstrap-override iframe {
+  height: 35vw ;
+  width: 35VW;
+} */
+
+.card-size {
+  height: 29vw;
+  width: 29vw;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+/* #bootstrap-override .iframe-border{
+  border-radius: 4px;
+  border: 1px solid white !important;
+  box-shadow: 0px 0px 5px grey;
+  color: white;
+} */
+
+/*
+.########..#######..##.....##.########......##.....##.########.##.....##.##......
+....##....##.....##.##.....##.##.....##.....##.....##....##....###...###.##......
+....##....##.....##.##.....##.##.....##.....##.....##....##....####.####.##......
+....##....##.....##.##.....##.########......#########....##....##.###.##.##......
+....##....##.....##.##.....##.##...##.......##.....##....##....##.....##.##......
+....##....##.....##.##.....##.##....##..###.##.....##....##....##.....##.##......
+....##.....#######...#######..##.....##.###.##.....##....##....##.....##.########
+*/
+
+.tour-listing {
+  color: white;
+}
+
+.tour-invisible-block_position {
+  height: 148px;
+}
+
+/*
+.##.....##.########.##.....##.########..########.########...######.
+.###...###.##.......###...###.##.....##.##.......##.....##.##....##
+.####.####.##.......####.####.##.....##.##.......##.....##.##......
+.##.###.##.######...##.###.##.########..######...########...######.
+.##.....##.##.......##.....##.##.....##.##.......##...##.........##
+.##.....##.##.......##.....##.##.....##.##.......##....##..##....##
+.##.....##.########.##.....##.########..########.##.....##..######.
+*/
+
+h4 {
+  font-family: "Quicksand_Medium";
+  color: red;
+  text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+  letter-spacing: 2px;
+}
+
+P {
+  font-family: "Quicksand_Medium";
+  color: white;
+}
+
+.read-more {
+  font-size: 1.2rem;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-family: "Capture_Smallz";
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: rgb(255, 255, 255);
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: rgb(255, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .9);
+  text-decoration: none;
+}
+
+/*
+.########..#######...#######..########.########.########.
+.##.......##.....##.##.....##....##....##.......##.....##
+.##.......##.....##.##.....##....##....##.......##.....##
+.######...##.....##.##.....##....##....######...########.
+.##.......##.....##.##.....##....##....##.......##...##..
+.##.......##.....##.##.....##....##....##.......##....##.
+.##........#######...#######.....##....########.##.....##
+*/
+
+/*
+....###....##.......##..........########.....###.....######...########..######.
+...##.##...##.......##..........##.....##...##.##...##....##..##.......##....##
+..##...##..##.......##..........##.....##..##...##..##........##.......##......
+.##.....##.##.......##..........########..##.....##.##...####.######....######.
+.#########.##.......##..........##........#########.##....##..##.............##
+.##.....##.##.......##..........##........##.....##.##....##..##.......##....##
+.##.....##.########.########....##........##.....##..######...########..######.
+*/
+
+.footer__border_colored{
+  border-top: 1px solid dimgray;
+}
+
+.footer-info {
+  font-family: "Capture_Smallz";
+  letter-spacing: 1px;
+  color: white;
+}
+
+.footer-info h3 {
+  padding: 1vw;
+}
+
+.footer-info p {
+  font-family: "Quicksand_Medium";
+  font-size: 16px;
+  font-weight: 100;
+  width: 90%;
+  padding: 0vw 2vw 1vw 1vw;
+  letter-spacing: 0px;
+}
+
+.footer-icons__item_facebook {
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/facebook-white.png);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.footer-icons__item_facebook:hover {
+  background-image: url(../img/facebook-colored.png);
+  transform: scale(1.3);
+  transition: 0.2s ease-in;
+}
+
+.footer-icons__item_instagram{
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/instagram-white.png);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.footer-icons__item_instagram:hover {
+  background-image: url(../img/instagram-colored.png);
+  transform: scale(1.3);
+  transition: 0.2s ease-in;
+}
+
+.footer-icons__item_twitter {
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/twitter-white.png);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.footer-icons__item_twitter:hover {
+  background-image: url(../img/twitter-colored.png);
+  transform: scale(1.3);
+  transition: 0.2s ease-in;
+}
+
+.footer-icons__item_youtube {
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/youtube-white.png);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.footer-icons__item_youtube:hover {
+  background-image: url(../img/youtube-colored.png);
+  transform: scale(1.3);
+  transition: 0.2s ease-in;
+}
+
+.footer-logo_position {
+  height: 80px;
+  position: relative;
+  left: calc(50% - 110px); z-index: 1000;
+  z-index: 1000;
+}
+
+/*
+..#######.....##.....##.########.########..####....###...
+.##.....##....###...###.##.......##.....##..##....##.##..
+.##.###.##....####.####.##.......##.....##..##...##...##.
+.##.###.##....##.###.##.######...##.....##..##..##.....##
+.##.#####.....##.....##.##.......##.....##..##..#########
+.##...........##.....##.##.......##.....##..##..##.....##
+..#######.....##.....##.########.########..####.##.....##
+*/
+
+/*
+..#######...#######...#######.
+.##.....##.##.....##.##.....##
+.##.....##.##.....##........##
+..########..########..#######.
+........##........##.##.......
+.##.....##.##.....##.##.......
+..#######...#######..#########
+*/
+
+@media (max-width: 991px) {
+
+/* DISCO.HTML =============================================================================== */
+
+.card-size {
+  height: 35vw;
+  width: 35vw;
+} 
+
+}
+
+/*
+.########..#######...#######.
+.##....##.##.....##.##.....##
+.....##...##........##.....##
+....##....########...#######.
+...##.....##.....##.##.....##
+...##.....##.....##.##.....##
+...##......#######...#######.
+*/
+
+@media (max-width: 767px) {
+
+/* INDEX.HTML =============================================================================== */
+
+  .header-background_transparent {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 500;
+    background-color: black;
+  }
+
+  .header-background_colored {
+    background: black;
+    height: 135px;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+  }
+
+  .main-invisible-block_position {
+    height: 80px;
+    background: black;
+    display: block;
+    position: relative;
+    top: 0px;
+    z-index: 400;
+  }
+
+  .navbar__border_colored{
+    height: 1px;
+    width: 100%;
+    position: fixed;
+    top: 134px ;
+    border-top: 1px solid dimgray;
+    z-index: 800;
+  }
+
+  #bootstrap-override .navbar:hover {
+    border-bottom: 1px solid dimgray;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.4) 45%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1002;
+  }
+  
+  #bootstrap-override .dropdown-menu_background {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0) 100%);
+    border-top: 1px solid dimgray;
+    border-bottom: 1px solid dimgray;
+    z-index: 1002;
+  }
+
+  #bootstrap-override .link-section__central-link_styled  {
+    font-size: 2,5vw;
+    top: 19.25vw;
+  }
+
+  .link-section__item {
+    height: 45vw;
+  }
+
+/* DISCO.HTML =============================================================================== */
+
+  .card-size {
+    height: 80vw;
+    width: 80vw;
+}
+
+}
+
+/*
+.########.########..#######.
+.##.......##....##.##.....##
+.##...........##...##.......
+.#######.....##....########.
+.......##...##.....##.....##
+.##....##...##.....##.....##
+..######....##......#######.
+*/
+
+@media (max-width: 575px)  {
+
+#bootstrap-override .carousel__central-link_styled {
+  top: calc((10.5vw + .5vw + 12px) * (-1));
+  background-color: rgba(255, 0, 0, 0.5);
+  font-size: 2.5vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+}
+
+
+/*
+.########..#######..##....##.########..######.
+.##.......##.....##.###...##....##....##....##
+.##.......##.....##.####..##....##....##......
+.######...##.....##.##.##.##....##.....######.
+.##.......##.....##.##..####....##..........##
+.##.......##.....##.##...###....##....##....##
+.##........#######..##....##....##.....######.
+*/
+
+@font-face {
+  font-family: "Capture_it";
+  src: url(../fonts/Capture_it.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: "Quicksand_Medium";
+  src: url(../fonts/Quicksand_Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: "Capture_Smallz";
+  src: url(../fonts/Capture_Smallz.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
